@@ -1,0 +1,182 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1"
+    tools:context="edu.weber.tondricek.cs4750.otagostudentapp.otagostudentapp.NavigationDrawerFragment">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF8E1"
+            tools:context="edu.weber.tondricek.cs4750.otagostudentapp.otagostudentapp.NavigationDrawerFragment">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivLogo"
+                android:src="@drawable/logo"
+                android:layout_marginLeft="55dp"
+                android:layout_marginStart="55dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/content_otago_logo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivLogo"
+                android:paddingTop="5dp"
+                android:paddingLeft="5dp"
+                android:text="@string/holder_welcome_username"
+                android:textColor="#000000"
+                android:id="@+id/txvWelcome"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_change_url"
+                android:layout_below="@+id/txvWelcome"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="15dp"
+                android:paddingLeft="25dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/ivSwitchUrl"
+                android:onClick="switchUrl" />
+
+            <TextView
+                android:id="@+id/txvSwitchUrl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_switch_url"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:clickable="true"
+                android:onClick="switchUrl"
+                android:layout_below="@+id/txvWelcome"
+                android:layout_toRightOf="@+id/ivSwitchUrl"
+                android:layout_toEndOf="@+id/ivSwitchUrl"
+                android:paddingLeft="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_view_casebooks"
+                android:layout_below="@+id/ivSwitchUrl"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="15dp"
+                android:paddingLeft="25dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/ivViewCasebooks"
+                android:onClick="viewCasebooks" />
+
+            <TextView
+                android:id="@+id/txvViewCasebooks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_view_casebooks"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:clickable="true"
+                android:onClick="viewCasebooks"
+                android:layout_below="@+id/txvSwitchUrl"
+                android:layout_toRightOf="@+id/ivSwitchUrl"
+                android:layout_toEndOf="@+id/ivSwitchUrl"
+                android:paddingLeft="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_import_casebooks"
+                android:layout_below="@+id/ivViewCasebooks"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="15dp"
+                android:paddingLeft="25dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/ivImportCasebooks"
+                android:onClick="importCasebooks" />
+
+            <TextView
+                android:id="@+id/txvImportCasebooks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_import_casebooks"
+                android:textColor="#000000"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:clickable="true"
+                android:onClick="importCasebooks"
+                android:layout_below="@+id/txvViewCasebooks"
+                android:layout_toRightOf="@+id/ivImportCasebooks"
+                android:layout_toEndOf="@+id/ivImportCasebooks"
+                android:paddingLeft="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_upload_changes"
+                android:layout_below="@+id/ivImportCasebooks"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="15dp"
+                android:paddingLeft="25dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/ivUploadChanges"
+                android:onClick="uploadChanges" />
+
+            <TextView
+                android:id="@+id/txvUploadChanges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_upload_changes"
+                android:textColor="#000000"
+                android:paddingTop="15dp"
+                android:paddingBottom="20dp"
+                android:clickable="true"
+                android:onClick="uploadChanges"
+                android:layout_below="@+id/txvImportCasebooks"
+                android:layout_toRightOf="@+id/ivUploadChanges"
+                android:layout_toEndOf="@+id/ivUploadChanges"
+                android:paddingLeft="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_logout"
+                android:layout_below="@+id/ivUploadChanges"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingTop="15dp"
+                android:paddingLeft="25dp"
+                android:paddingBottom="10dp"
+                android:id="@+id/ivLogout"
+                android:onClick="logout" />
+
+            <TextView
+                android:id="@+id/txvLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/action_logout"
+                android:textColor="#000000"
+                android:paddingTop="15dp"
+                android:paddingBottom="20dp"
+                android:clickable="true"
+                android:onClick="logout"
+                android:layout_below="@+id/txvUploadChanges"
+                android:layout_toRightOf="@+id/ivLogout"
+                android:layout_toEndOf="@+id/ivLogout"
+                android:paddingLeft="20dp" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

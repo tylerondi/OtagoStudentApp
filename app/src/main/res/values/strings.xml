@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">OtagoStudentApp</string>
+    <string name="title_activity_main">Otago Student App</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_login">Login</string>
+    <string name="action_switch_url">Change URL</string>
+    <string name="action_logo">Otago Logo</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="content_otago_logo">Otago Logo</string>
+    <string name="action_import_casebooks">Import Casebooks</string>
+    <string name="action_upload_changes">Upload Changes</string>
+    <string name="action_logout">Change User</string>
+    <string name="label_login_name">Login Name:</string>
+    <string name="label_password">Password:</string>
+    <string name="label_select_casebook">Select a Casebook</string>
+    <string name="label_select_category">Select a Category</string>
+    <string name="holder_category_title">Category Title</string>
+    <string name="holder_question_text">Question Text</string>
+    <string name="action_enter_url">Enter URL</string>
+    <string name="label_enter_url">Enter the URL for where the Otago Casebook App is hosted (e.g. http://otago.com/):</string>
+    <string name="label_http">http://</string>
+    <string name="holder_welcome_username">Welcome userName!</string>
+    <string name="action_view_casebooks">View Casebooks</string>
+    <string name="label_answer_questions">Answer Questions</string>
+    <string-array name="tabs">
+        <item>Categories</item>
+        <item>Questions</item>
+    </string-array>
+
+</resources>
